@@ -1,0 +1,19 @@
+{
+    "users": [
+      { "id": 1, "username": "john_doe", "email": "john@example.com" }
+    ],
+    "languages": [
+      { "id": 1, "language_name": "Python", "description": "Learn Python from scratch." },
+      { "id": 2, "language_name": "JavaScript", "description": "Master JavaScript for web development." }
+    ],
+    "topics": [
+      { "id": 1, "language_id": 1, "title": "Introduction to Python" },
+      { "id": 2, "language_id": 1, "title": "Python Data Structures" },
+      { "id": 3, "language_id": 2, "title": "JavaScript Basics" }
+    ],
+    "progress": [
+      { "id": 1, "user_id": 1, "topic_id": 1, "completed": true },
+      { "id": 2, "user_id": 1, "topic_id": 2, "completed": false }
+    ]
+  }
+  

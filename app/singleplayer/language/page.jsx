@@ -1,7 +1,9 @@
+"use client"
+
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import languages from '../../languages.json'; // Verify path correctness
-import pythonCurriculum from './LanguageJSON/pythonCurriculum.json';
+import languages from '../../../util/languages.json'; // Verify path correctness
+import pythonCurriculum from '../../../util/pythonCurriculum.json';
 
 const LanguageTopics = () => {
   const { id } = useParams();
