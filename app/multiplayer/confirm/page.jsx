@@ -1,17 +1,19 @@
+"use client"
+
 import React from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import {useRouter, useSearchParams} from "next/navigation";
 
 const Confirm = () => {
-  const navigate = useNavigate();
-  const location = useLocation();
-  const { selectedSlide } = location.state || {};
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const selectedSlide = JSON.parse(searchParams.get('state'))
 
   if (!selectedSlide) {
     return <p>No slide selected.</p>;
   }
 
   const handleConfirm = () => {
-    navigate('/battle');
+    router.push('/multiplayer/battle');
   };
 
   return (

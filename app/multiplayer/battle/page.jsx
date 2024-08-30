@@ -1,12 +1,14 @@
+'use client'
+
 import React, { useState } from 'react';
 import Player from '../../../components/MP/Player';
 import Question from '../../../components/MP/Question';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from "next/navigation";
 
 const questions = [
     {
         text: "What is the correct print statement used in PYTHON?",
-        options: ["A. Hotdog", "B. print(\"text\")", "C. Hotdog", "D. Hotdog"],
+        options: ["A. wrong", "B. print(\"text\")", "C. wrong", "D. wrong"],
         correctAnswer: "B. print(\"text\")"
     },
     {
@@ -18,13 +20,13 @@ const questions = [
 ];
 
 const Battle = () => {
+    const router = useRouter();
     const [playerHealth, setPlayerHealth] = useState(5);
     const [enemyHealth, setEnemyHealth] = useState(5);
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [turn, setTurn] = useState('player'); // 'player' or 'enemy'
     const [playerDamaged, setPlayerDamaged] = useState(false);
     const [enemyDamaged, setEnemyDamaged] = useState(false);
-    const navigate = useNavigate();
 
     const handleAnswer = (isCorrect) => {
         if (turn === 'player' && isCorrect) {
@@ -40,14 +42,14 @@ const Battle = () => {
         setCurrentQuestion((currentQuestion + 1) % questions.length);
     };
 
-    if (playerHealth <= 0) navigate('/lose');
-    if (enemyHealth <= 0) navigate('/win');
+    if (playerHealth <= 0) router.push('/multiplayer/lose');
+    if (enemyHealth <= 0) router.push('/multiplayer/win');
 
     return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-[url('/GENERAL/BACKGROUND_FIGHT.svg')] bg-cover bg-fixed text-white">
             <div className="flex w-full justify-around mb-8">
-                <Player name="Player" health={playerHealth} avatar="./PYTHON.svg" isDamaged={playerDamaged} />
-                <Player name="Enemy" health={enemyHealth} avatar="./JAVA.svg" isDamaged={enemyDamaged} />
+                <Player name="Player" health={playerHealth} avatar="/PYTHON.svg" isDamaged={playerDamaged} />
+                <Player name="Enemy" health={enemyHealth} avatar="/JAVA.svg" isDamaged={enemyDamaged} />
             </div>
             <div className="w-full max-w-3xl">
                 <Question

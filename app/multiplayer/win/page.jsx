@@ -1,22 +1,23 @@
+'use client'
+
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import winnerImage from '/MULTIPLAY/LAST_WINNER.svg';
+import { useRouter} from "next/navigation";
 
 const Win = () => {
-    const navigate = useNavigate();
+    const router = useRouter();
 
     return (
         <div
             className="flex flex-col items-center justify-center min-h-screen overflow-hidden"
             style={{
-                backgroundImage: `url(${winnerImage})`,
+                backgroundImage: `url('/MULTIPLAY/LAST_WINNER.svg')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat'
             }}
         >
             <button
-                onClick={() => navigate('/')}
+                onClick={() => router.push('/')}
                 className="bg-blue-500 text-white px-8 py-4 rounded-lg text-xl absolute bottom-8"
                 style={{ left: '50%', transform: 'translateX(-50%)' }}
             >

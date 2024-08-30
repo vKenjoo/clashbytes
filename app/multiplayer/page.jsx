@@ -1,19 +1,26 @@
 "use client";
 
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useRouter, useSearchParams } from 'next/navigation';
 import Slider from '../../components/MP/Slider';
 
 const MultiPlayerFrame = () => {
 	const [selectedSlide, setSelectedSlide] = useState(null);
-	const navigate = useNavigate();
+	const router = useRouter();
+
+	const createQueryString = (name, value) => {
+		const params = new URLSearchParams();
+		params.set(name, value);
+
+		return params.toString();
+	};
 
 	const handleSelect = (slide) => {
 		setSelectedSlide(slide);
 	};
 
 	const handleConfirm = () => {
-		navigate('/confirm', { state: { selectedSlide } });
+		router.push(`multiplayer/confirm?${createQueryString("state", JSON.stringify(selectedSlide) )}` );
 	};
 
 	const handleBack = () => {
