@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Slider from '../MP/Slider.jsx';
+import Slider from '../../components/MP/Slider';
 
 const MultiPlayerFrame = () => {
 	const [selectedSlide, setSelectedSlide] = useState(null);

@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const HomeFrame = () => {
   return (
-      <div className='bg-[url("/HOMEPAGE_COMPONENTS/HOMEPAGE.svg")] bg-cover bg-fixed h-full'>
+      <div className='h-full'>
         {/* //TODO: need na mahiwalay yung assets here kasi hindi ko mapush down yung asset (character) up
         para mag mukahng mas okay visually */}
         <div className='flex-row h-full justify-end items-stretch'>

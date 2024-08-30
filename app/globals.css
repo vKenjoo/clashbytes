@@ -15,7 +15,8 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
+/* From NextJS */
+/*
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -26,8 +27,17 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+*/
+
+
+/* For RootLayout */
+main {
+  background-image: url(../public/HOMEPAGE_COMPONENTS/HOMEPAGE.svg)
 }
