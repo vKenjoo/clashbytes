@@ -1,0 +1,454 @@
+{
+    "pythonCurriculum": {
+      "subtopics": [
+        {
+          "id": "1",
+          "title": "Comments and Printing",
+          "questions": [
+            {
+              "id": "1",
+              "question": "To begin a comment in Python, you write ______.",
+              "answer": "#"
+            },
+            {
+              "id": "2",
+              "question": "To print 'Hello, world!' in Python, you write ______.",
+              "answer": "print('Hello, world!')"
+            },
+            {
+              "id": "3",
+              "question": "How do you create a multi-line comment in Python? Make a multi-line comment with the content \"Multi-line comment\"",
+              "answer": "\"\"\"Multi-line comment\"\"\""
+            },
+            {
+              "id": "4",
+              "question": "To print the value of a variable 'name' in Python, you write ______.",
+              "answer": "print(name)"
+            },
+            {
+              "id": "5",
+              "question": "What is the correct way to comment out a line of code in Python? Write a comment with \"This is a comment\" as the content",
+              "answer": "#This is a comment"
+            },
+            {
+              "id": "6",
+              "question": "How do you print 'Hello' followed by 'World' on the same line?",
+              "answer": "print('Hello', 'World')"
+            },
+            {
+              "id": "7",
+              "question": "How do you print a blank line in Python?",
+              "answer": "print()"
+            },
+            {
+              "id": "8",
+              "question": "To print a variable 'age' with its value in Python, you write ______.",
+              "answer": "print('Age:', age)"
+            },
+            {
+              "id": "9",
+              "question": "what symbol do you use to prevent a line of code from being executed in Python?",
+              "answer": "#"
+            },
+            {
+              "id": "10",
+              "question": "What is the purpose of using comments in Python code?",
+              "answer": "To add explanations or disable code temporarily."
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "title": "Variables & Data Types",
+          "questions": [
+            {
+              "id": "1",
+              "question": "To assign the value 20 to a variable named age, you write var ______.",
+              "answer": "age=20"
+            },
+            {
+                "id": "2",
+                "question": "To create a string variable called city with the value \"Paris\", you write var ______.",
+                "answer": "city=\"Paris\""
+            },
+            {
+                "id": "3",
+                "question": " To declare a float variable price with the value 19.99, you write var ______.",
+                "answer": "price=19.99"
+            },
+            {
+                "id": "4",
+                "question": "To print the value of a variable name, you write var ______.",
+                "answer": "is_student=True"
+            },
+            {
+                "id": "5",
+                "question": "",
+                "answer": "print(name)"
+            },
+            {
+                "id": "6",
+                "question": "",
+                "answer": "is_present"
+            },
+            {
+                "id": "7",
+                "question": "",
+                "answer": "count=0"
+            },
+            {
+                "id": "8",
+                "question": "To declare an integer variable count and set it to zero, you write var ______.",
+                "answer": "total=x+5"
+            },
+            {
+                "id": "9",
+                "question": "To create a variable name that stores the string \"Alice\", you write var ______.",
+                "answer": "name=\"Alice\""
+            },
+            {
+                "id": "10",
+                "question": "To declare an integer variable tasks and set it to 7, you write var ______.",
+                "answer": "tasks=7"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "title": "Basic Operations",
+          "questions": [
+            {
+              "id": "1",
+              "question": "To add two numbers a and b together, you write ______.",
+              "answer": "a+b"
+            },
+            {
+              "id": "2",
+              "question": "The result of multiplying x by 3 can be expressed as ______.",
+              "answer": "x*3"
+            },
+            {
+              "id": "3",
+              "question": "To divide total by 2 and get the integer quotient, you write ______.",
+              "answer": "total//2"
+            },
+            {
+              "id": "4",
+              "question": "If num1 is 10 and num2 is 3, the result of num1 modulo num2 is ______.",
+              "answer": "num1%num2"
+            },
+            {
+              "id": "5",
+              "question": "To concatenate two strings first_name and last_name you have to add them together, this means you write ______.",
+              "answer": "first_name+last_name"
+            },
+            {
+              "id": "6",
+              "question": "To subtract y from x, you write ______.",
+              "answer": "x-y"
+            },
+            {
+              "id": "7",
+              "question": "The result of raising base to the power of exponent is expressed as ______.",
+              "answer": "base**exponent"
+            },
+            {
+              "id": "8",
+              "question": "If a is 15 and b is 4, the floor division of a by b results in ______.",
+              "answer": "a//b"
+            },
+            {
+              "id": "9",
+              "question": "To increment the variable count by 1, you write ______.",
+              "answer": "count+=1"
+            },
+            {
+              "id": "10",
+              "question": "The result of multiplying x by 3 is stored in the variable result, this can be expressed (put x before 3) as ______.",
+              "answer": "result=x*3"
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "title": "Conditionals",
+          "questions": [
+            {
+              "id": "1",
+              "question": "To check if a is greater than b, you write ______.",
+              "answer": "a>b"
+            },
+            {
+              "id": "2",
+              "question": "To check if x is equal to y, you write ______.",
+              "answer": "x==y"
+            },
+            {
+              "id": "3",
+              "question": "To check if num is not equal to 10, you write ______.",
+              "answer": "num!=10"
+            },
+            {
+              "id": "4",
+              "question": "To check if score is less than or equal to 100, you write ______.",
+              "answer": "score<=100"
+            },
+            {
+              "id": "5",
+              "question": "To check if age is greater than or equal to 18, you write ______.",
+              "answer": "age>=18"
+            },
+            {
+              "id": "6",
+              "question": "To check if x is less than y and z is greater than w, you write ______.",
+              "answer": "x<y and z>w"
+            },
+            {
+              "id": "7",
+              "question": "To check if a is not equal to b and c is equal to d, you write ______.",
+              "answer": "a!=b and c==d"
+            },
+            {
+              "id": "8",
+              "question": "To check if either x is greater than y or z is less than w, you write ______.",
+              "answer": "x>y or z<w"
+            },
+            {
+              "id": "9",
+              "question": "To check if not a is true, you write ______.",
+              "answer": "not a"
+            },
+            {
+              "id": "10",
+              "question": "To check if a is between 5 and 10 (inclusive), you write ______.",
+              "answer": "5<=a<=10"
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "title": "Strings",
+          "questions": [
+            {
+              "id": "1",
+              "question": "How do you concatenate two variables 'first_name' and 'last_name' into a single string in Python?",
+              "answer": "full_name=first_name+' '+last_name"
+            },
+            {
+              "id": "2",
+              "question": "What is the output of 'print(len('Hello'))' in Python?",
+              "answer": "print(len('Hello'))"
+            },
+            {
+              "id": "3",
+              "question": "How do you convert a string 'num_str' to an integer in Python?",
+              "answer": "num=int(num_str)"
+            },
+            {
+              "id": "4",
+              "question": "How do you extract the first character of a string 'text' in Python? Place this character into the variable first_char.",
+              "answer": "first_char=text[0]"
+            },
+            {
+              "id": "5",
+              "question": "What method is used to convert all characters in a string 'text' to uppercase in Python?",
+              "answer": "text.upper()"
+            },
+            {
+              "id": "6",
+              "question": "How do you check if a substring 'sub' exists within a string 'main' in Python?",
+              "answer": "if sub in main:"
+            },
+            {
+              "id": "7",
+              "question": "What is the correct way to access the last character of a string 'word' in Python?",
+              "answer": "word[-1]"
+            },
+            {
+              "id": "8",
+              "question": "How do you replace all occurrences of 'old' with 'new' in a string 'text' in Python?",
+              "answer": "text.replace('old', 'new')"
+            },
+            {
+              "id": "9",
+              "question": "What is the output of 'print('Hello'[2:])' in Python?",
+              "answer": "print('Hello'[2:])"
+            },
+            {
+              "id": "10",
+              "question": "How do you check if a string 'text' starts with 'prefix' in Python?",
+              "answer": "if text.startswith('prefix'):"
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "title": "Loops",
+          "questions": [
+            {
+              "id": "1",
+              "question": "To create a for loop that iterates 5 times, you write ______.",
+              "answer": "for i in range(5):"
+            },
+            {
+              "id": "2",
+              "question": "To create a while loop that runs while x is less than 10, you write ______.",
+              "answer": "while x<10:"
+            },
+            {
+              "id": "3",
+              "question": "To iterate over each element in a list called my_list, you write ______.",
+              "answer": "for item in my_list:"
+            },
+            {
+              "id": "4",
+              "question": "To create a for loop that iterates from 1 to 10 (inclusive), you write ______.",
+              "answer": "for i in range(1,11):"
+            },
+            {
+              "id": "5",
+              "question": "To break out of a loop when a condition is met, you write ______.",
+              "answer": "break"
+            },
+            {
+              "id": "6",
+              "question": "To continue to the next iteration of a loop when a condition is met, you write ______.",
+              "answer": "continue"
+            },
+            {
+              "id": "7",
+              "question": "To create a nested loop with an outer loop iterating 3 times and an inner loop iterating 2 times, you write ______.",
+              "answer": "for i in range(3):for j in range(2):"
+            },
+            {
+              "id": "8",
+              "question": "To create an infinite loop using a while loop, you write ______.",
+              "answer": "while True:"
+            },
+            {
+              "id": "9",
+              "question": "To print each number from 0 to 4 using a for loop, you write ______.",
+              "answer": "for i in range(5):print(i)"
+            },
+            {
+              "id": "10",
+              "question": "To calculate the sum of all elements in a list called numbers using a for loop, you write ______.",
+              "answer": "total=0;for num in numbers:total+=num"
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "title": "Casting",
+          "questions": [
+            {
+              "id": "1",
+              "question": "How do you convert a float 'num' to an integer in Python?",
+              "answer": "int(num)"
+            },
+            {
+              "id": "2",
+              "question": "What is the output of 'print(float(7))' in Python?",
+              "answer": "7.0"
+            },
+            {
+              "id": "3",
+              "question": "How do you convert an integer 'num' to a string in Python?",
+              "answer": "str(num)"
+            },
+            {
+              "id": "4",
+              "question": "What is the correct syntax to convert a string 'num_str' to an integer in Python?",
+              "answer": "int(num_str)"
+            },
+            {
+              "id": "5",
+              "question": "How do you convert a string 'num_str' to a float in Python?",
+              "answer": "float(num_str)"
+            },
+            {
+              "id": "6",
+              "question": "How do you convert an integer 'num' to a boolean in Python?",
+              "answer": "bool(num)"
+            },
+            {
+              "id": "7",
+              "question": "What is the output of 'print(bool(0))' in Python?",
+              "answer": "print(bool(0))"
+            },
+            {
+              "id": "8",
+              "question": "How do you convert a boolean 'is_valid' to an integer in Python?",
+              "answer": "int(is_valid)"
+            },
+            {
+              "id": "9",
+              "question": "What is the correct way to convert a variable 'count' to a string in Python?",
+              "answer": "str(count)"
+            },
+            {
+              "id": "10",
+              "question": "How do you cast a variable 'value' to a different data type in Python?",
+              "answer": "new_type(value)"
+            }
+          ]
+        },
+        {
+          "id": "8",
+          "title": "Object Oriented Programming",
+          "questions": [
+            {
+              "id": "1",
+              "question": "To define a class named Dog, you write ______.",
+              "answer": "class Dog:"
+            },
+            {
+              "id": "2",
+              "question": "To define an initializer method for a class, you write ______.",
+              "answer": "def __init__(self):"
+            },
+            {
+              "id": "3",
+              "question": "To create an instance of a class named Dog, you write ______.",
+              "answer": "dog=Dog()"
+            },
+            {
+              "id": "4",
+              "question": "To define a method named bark in the Dog class, you write ______.",
+              "answer": "def bark(self):"
+            },
+            {
+              "id": "5",
+              "question": "To access the name attribute of a Dog instance, you write ______.",
+              "answer": "dog.name"
+            },
+            {
+              "id": "6",
+              "question": "To set the age attribute of a Dog instance to 5, you write ______.",
+              "answer": "dog.age=5"
+            },
+            {
+              "id": "7",
+              "question": "To define a subclass of Dog named Puppy, you write ______.",
+              "answer": "class Puppy(Dog):"
+            },
+            {
+              "id": "8",
+              "question": "To call the bark method on a Dog instance, you write ______.",
+              "answer": "dog.bark()"
+            },
+            {
+              "id": "9",
+              "question": "To check if an object dog is an instance of the Dog class, you write ______.",
+              "answer": "isinstance(dog,Dog)"
+            },
+            {
+              "id": "10",
+              "question": "To define a class attribute named species for the Dog class, you write ______.",
+              "answer": "species='Canine'"
+            }
+          ]
+        }
+      ]
+    }
+  }

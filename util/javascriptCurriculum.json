@@ -1,0 +1,62 @@
+{
+  "javascriptCurriculum": {
+    "subtopics": [
+      {
+        "id": "1",
+        "title": "Comments and Printing",
+        "questions": [
+          {
+            "id": "1",
+            "question": "To write a single-line comment, you use ______.",
+            "answer": "//"
+          },
+          {
+            "id": "2",
+            "question": "To write a multi-line comment, you start with ______ and end with ______.",
+            "answer": "/* */"
+          },
+          {
+            "id": "3",
+            "question": "To print 'Hello, World!' to the console, you use ______.",
+            "answer": "console.log('Hello, World!');"
+          },
+          {
+            "id": "4",
+            "question": "To print the value of a variable x to the console, you use ______.",
+            "answer": "console.log(x);"
+          },
+          {
+            "id": "5",
+            "question": "To write an inline comment after a statement, you use ______.",
+            "answer": "//"
+          },
+          {
+            "id": "6",
+            "question": "To print the result of a function call myFunction() to the console, you use ______.",
+            "answer": "console.log(myFunction());"
+          },
+          {
+            "id": "7",
+            "question": "To print a string and a variable together, you use ______.",
+            "answer": "console.log('Value is '+x);"
+          },
+          {
+            "id": "8",
+            "question": "To print a string and a variable using template literals, you use ______.",
+            "answer": "console.log(`Value is ${x}`);"
+          },
+          {
+            "id": "9",
+            "question": "To write a comment explaining the next line of code, you use ______.",
+            "answer": "//"
+          },
+          {
+            "id": "10",
+            "question": "To print a warning message to the console, you use ______.",
+            "answer": "console.warn('This is a warning');"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+	"subtopics": [
+		{
+			"id": 1,
+			"title": "Subtopic 1",
+			"questions": [
+				{
+					"id": 1,
+					"question": "What is Python?",
+					"answer": "A high-level programming language."
+				},
+				{
+					"id": 2,
+					"question": "Explain variables in Python.",
+					"answer": "Variables are used to store data values."
+				},
+				{
+					"id": 3,
+					"question": "What is a function?",
+					"answer": "A function is a block of code that performs a specific task."
+				},
+				{
+					"id": 4,
+					"question": "What are data types in Python?",
+					"answer": "Data types include int, float, str, list, dict, etc."
+				},
+				{
+					"id": 5,
+					"question": "How do you handle errors in Python?",
+					"answer": "Using try and except blocks."
+				}
+			]
+		},
+		{
+			"id": 2,
+			"title": "Subtopic 2",
+			"questions": [
+				{
+					"id": 6,
+					"question": "What is a list comprehension?",
+					"answer": "A concise way to create lists using a single line of code."
+				},
+				{
+					"id": 7,
+					"question": "Explain exception handling.",
+					"answer": "Exception handling is done using try, except, and finally blocks."
+				}
+			]
+		}
+	]
+}
