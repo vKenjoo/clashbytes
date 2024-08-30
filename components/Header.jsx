@@ -9,9 +9,9 @@ const Header = ({ tokenCount }) => {
                 <img className='h-8' src='/GENERAL/LOGO.svg' alt='Logo' />
                 <nav>
                     <ul className="flex space-x-8 text-base">
-                        <li><Link href="/"><a className="hover:text-yellow-500">Home</a></Link></li>
-                        <li><Link href="/singleplayer"><a className="hover:text-yellow-500">Singleplayer</a></Link></li>
-                        <li><Link href="/multiplayer"><a className="hover:text-yellow-500">Multiplayer</a></Link></li>
+                        <li><Link href="/" className="hover:text-yellow-500">Home</Link></li>
+                        <li><Link href="/singleplayer" className="hover:text-yellow-500">Singleplayer</Link></li>
+                        <li><Link href="/multiplayer" className="hover:text-yellow-500">Multiplayer</Link></li>
                     </ul>
                 </nav>
                 <div className="flex items-center space-x-4">
