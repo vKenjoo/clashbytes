@@ -1,0 +1,49 @@
+{
+    "language": [
+      {
+        "id": "1",
+        "language": "Python",
+        "description": "Python is a versatile, high-level programming language known for its readability and simplicity. It is widely used in web development, scientific computing, artificial intelligence, and more."
+      },
+      {
+        "id": "3",
+        "language": "Javascript",
+        "description": "JavaScript is a dynamic programming language primarily used for web development. It allows interactive elements on websites and is essential for front-end and back-end web development."
+      },
+      {
+        "id": "4",
+        "language": "Java",
+        "description": "Java is a robust, object-oriented programming language used for developing desktop, web, and mobile applications. It is known for its platform independence and scalability."
+      },
+      {
+        "id": "5",
+        "language": "CSharp",
+        "description": "C# (C Sharp) is a versatile programming language developed by Microsoft. It is used for building Windows applications, web services, and games using the .NET framework."
+      },
+      {
+        "id": "6",
+        "language": "PHP",
+        "description": "PHP is a server-side scripting language designed for web development. It can be embedded into HTML and is used to create dynamic web pages and web applications."
+      },
+      {
+        "id": "7",
+        "language": "C++",
+        "description": "C++ is a powerful, general-purpose programming language based on C. It is widely used for systems software, game development, and applications requiring high performance."
+      },
+      {
+        "id": "8",
+        "language": "SQL",
+        "description": "SQL (Structured Query Language) is a language used to manage and manipulate databases. It is essential for storing, manipulating, and retrieving data in relational databases."
+      },
+      {
+        "id": "9",
+        "language": "R",
+        "description": "R is a programming language and software environment used for statistical computing and graphics. It is widely used among statisticians and data miners for data analysis."
+      },
+      {
+        "id": "10",
+        "language": "Swift",
+        "description": "Swift is a powerful and intuitive programming language created by Apple for macOS, iOS, watchOS, and tvOS development. It is designed to work seamlessly with Apple's frameworks."
+      }
+    ]
+  }
