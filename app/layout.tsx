@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={'min-h-screen flex flex-col ${inter.className}'}>
-          <Header className="sticky top-0 z-10" />
+          <Header className="sticky top-0 z-10"  />
           <main className="flex-grow">
               {children}
           </main>

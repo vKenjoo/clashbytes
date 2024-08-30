@@ -1,11 +1,15 @@
+"use client"
+
 import React from 'react';
-import { useLocation, useNavigate, useParams, Link } from 'react-router-dom';
+import { useRouter, useParams, useSearchParams } from "next/navigation";
+import Link from 'next/link'
 
 const Result = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
+  const searchParams = useSearchParams();
+  const router = useRouter()
   const { id } = useParams();  // Get `id` from URL parameters
-  const { questions = [], answers = {} } = location.state || {};
+  const questions = JSON.parse(searchParams.get("question"))
+  const answers = JSON.parse(searchParams.get("answers"))
 
   const sanitizeAnswer = (answer) => {
     return answer.trim();
@@ -49,19 +53,19 @@ const Result = () => {
       )}
       <div className="mt-4">
         <Link
-          to={`/language/${id}/topic/learn`}
+          href={`singleplayer/language/${id}/topic/learn`}
           className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4'
         >
           Go back to Tutorial
         </Link>
         <Link
-          to={`/language/${id}/topic/quiz`}
+          href={`singleplayer/language/${id}/topic/quiz`}
           className='bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded'
         >
           Retake the Test
         </Link>
         <button
-          onClick={() => navigate('/')}
+          onClick={() => router.push('/')}
           className='bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mt-4'
         >
           Go to Home

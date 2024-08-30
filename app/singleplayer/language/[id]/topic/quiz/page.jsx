@@ -1,15 +1,17 @@
 "use client"
 
-import { useNavigate } from 'react-router-dom';
-import { getRandomQuestions, sanitizeAnswer } from '../../../../../../refactor/components/SP/topic/Quiz/Utils.js';
-import pythonGET from '../../../../../../refactor/components/SP/LanguageJSON/pythonGET.json';
-import '../../../../../../refactor/components/SP/topic/Quiz/Quiz.css'; // Make sure the CSS file is correctly linked
+import { getRandomQuestions, sanitizeAnswer } from '../../../../../../util/Utils.js';
+import pythonGET from '../../../../../../util/pythonGET.json';
+import './quiz.css'
+import {useRouter, useParams} from "next/navigation";
+import {useEffect, useState} from "react"; // Make sure the CSS file is correctly linked
 
 const Quiz = () => {
+  const { id } = useParams()
   const [questions, setQuestions] = useState([]);
   const [answers, setAnswers] = useState({});
   const [error, setError] = useState('');
-  const navigate = useNavigate();
+  const router = useRouter();
 
   useEffect(() => {
     if (pythonGET && pythonGET.subtopics && pythonGET.subtopics.length > 0) {
@@ -33,7 +35,7 @@ const Quiz = () => {
   };
 
   const handleSubmit = () => {
-    navigate('/result', { state: { questions, answers } });
+    router.push(`/singleplayer/language/${id}/topic/quiz/result?question=${JSON.stringify(questions)}&answer=${JSON.stringify(answers)}`);
   };
 
   return (

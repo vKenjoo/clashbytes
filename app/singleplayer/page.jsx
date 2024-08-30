@@ -1,22 +1,28 @@
 "use client"
 
 import React from 'react';
+
 import languagesData from '../../util/languages.json';
+import {useRouter} from "next/navigation";
 
 const SinglePlayerFrame = ({ tokenCount, setTokenCount, unlockedCourses = [], setUnlockedCourses }) => {
-
+    const router = useRouter()
     const handleCourseClick = (courseId) => {
-        if (unlockedCourses.includes(courseId)) {
-            // Navigate directly if the course is already unlocked
-            redirect(`/language/${courseId}`);
-        } else if (tokenCount > 0) {
-            // Deduct a token and unlock the course
-            setTokenCount(tokenCount - 1);
-            setUnlockedCourses([...unlockedCourses, courseId]);
-            redirect(`/language/${courseId}`);
-        } else {
-            alert('You do not have enough tokens to unlock this course.');
-        }
+
+        // TODO: Implement Tokenization
+        router.push(`singleplayer/language/${courseId}`);
+
+        // if (unlockedCourses.includes(courseId)) {
+        //     // Navigate directly if the course is already unlocked
+        //     router.push(`singleplayer/language/${courseId}`);
+        // } else if (tokenCount > 0) {
+        //     // Deduct a token and unlock the course
+        //     setTokenCount(tokenCount - 1);
+        //     setUnlockedCourses([...unlockedCourses, courseId]);
+        //     router.push(`singleplayer/language/${courseId}`);
+        // } else {
+        //     alert('You do not have enough tokens to unlock this course.');
+        // }
     };
 
     return (
