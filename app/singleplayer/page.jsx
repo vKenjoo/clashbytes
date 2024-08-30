@@ -37,7 +37,7 @@ const SinglePlayerFrame = ({ tokenCount, setTokenCount, unlockedCourses = [], se
                     {languagesData.language.map((lang) => (
                         <div
                             key={lang.id}
-                            className={`pl-4 bg-white shadow-md rounded-lg overflow-hidden flex ${unlockedCourses.includes(lang.id) ? '' : 'opacity-50'}`}
+                            className={`pl-4 bg-white shadow-md rounded-lg overflow-hidden flex ${unlockedCourses.includes(lang.id) ? '' : 'opacity-80'}`}
                         >
                             <div className='p-4 flex-1'>
                                 <h3 className='text-xl font-bold mb-2'>{lang.language}</h3>

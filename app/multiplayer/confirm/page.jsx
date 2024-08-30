@@ -17,7 +17,7 @@ const Confirm = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-[url('/GENERAL/BACKGROUND_ONLY.svg')] bg-cover bg-fixed text-white">
+    <div className="flex items-center justify-center min-h-screen text-white">
       <div className="bg-black bg-opacity-75 p-10 md:p-8 rounded-lg text-center max-w-l mx-auto">
         <h1 className="text-5xl md:text-6l font-bold mb-6">Are you ready for battle?</h1>
         <p className="text-xl md:text-2xl mb-8">Confirm to proceed to the battle arena.</p>

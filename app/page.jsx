@@ -3,23 +3,32 @@
 import React from 'react';
 import Link from 'next/link';
 
+
 const HomeFrame = () => {
-  return (
-      <div className='h-full'>
-        <div className='flex-row h-full justify-end items-stretch'>
-          <div className='flex items-center justify-center absolute top-30 left-20'>
-            <img className='inline-block h-24 w-30' src='/HOMEPAGE_COMPONENTS/STAR_ONLY.svg'/>
-            <p className='inline-block text-white text-3xl w-30'>TechieKid</p>
-          </div>
-          <div className=' flex-col items-end justify-end p-4 bottom-20 right-20 absolute'>
-            <div className='flex gap-4 mb-4'>
-              <Link href="multiplayer"><img className='h-30 w-60' src='/HOMEPAGE_COMPONENTS/B_MULTIPLAYER_ONLY.png'/></Link>
-              <Link href="singleplayer"><img className='h-30 w-60' src='/HOMEPAGE_COMPONENTS/B_SOLO_ONLY.png'/></Link>
+    return (
+        <section
+            className='flex flex-grow bg-cb-homepage bg-cover bg-center bg-clip-border bg-fixed justify-end items-stretch '>
+            <Link href="/profile" className='items-center fixed top-16 left-56 z-10'>
+                <img className='max-h-60' src='/.CLASHBYTES/buttons/profile-button.svg'/>
+            </Link>
+            <div className="fixed top-20 m-auto z-1">
+                <img src="/.CLASHBYTES/languages/default.svg" className="h-96 "/>
             </div>
-          </div>
-        </div>
-      </div>
-  );
+            <div className='flex justify-end bottom-28 right-24 fixed z-10'>
+                <div className='inline-flex w-fit h-fit'>
+                    {/*  Inefficient sizing due to not being an iage, rather a div with background image*/}
+                    <Link href="multiplayer">
+                        <div
+                            className="bg-[url('/.CLASHBYTES/buttons/battle-button.svg')] hover:bg-[url('/.CLASHBYTES/buttons/battle-button-active.svg')] w-80 h-40 bg-contain bg-no-repeat bg-center"></div>
+                    </Link>
+                    <Link href="singleplayer">
+                        <div
+                            className="bg-[url('/.CLASHBYTES/buttons/solo-button.svg')] hover:bg-[url('/.CLASHBYTES/buttons/solo-button-active.svg')] w-80 h-40 bg-contain bg-no-repeat bg-center"></div>
+                    </Link>
+                </div>
+            </div>
+        </section>
+    );
 };
 
 export default HomeFrame;

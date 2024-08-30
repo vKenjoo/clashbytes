@@ -1,12 +1,13 @@
 "use client";
+
 import React from 'react';
 import Link from 'next/link'; // Next.js Link import
 
-const Header = ({ tokenCount }) => {
+const Header = ({tokenCount}) => {
     return (
-        <header className="w-screen bg-gray-800 text-white min-h-12 flex justify-center sticky">
-            <div className="h-auto m-auto w-9/12 flex justify-between items-center py-1">
-                <img className='h-8' src='/GENERAL/LOGO.svg' alt='Logo' />
+        <header className="flex w-full bg-gray-800 text-white min-h-16 justify-center overflow-auto">
+            <div className="h-auto m-auto w-9/12 flex justify-between items-center py-1 px-2">
+                <img className='h-6' src='/.CLASHBYTES/logo.svg' alt='Logo'/>
                 <nav>
                     <ul className="flex space-x-8 text-base">
                         <li><Link href="/" className="hover:text-yellow-500">Home</Link></li>
