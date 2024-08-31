@@ -4,25 +4,26 @@ import React from 'react';
 
 import languagesData from '../../util/languages.json';
 import {useRouter} from "next/navigation";
+import { useTokenContext } from '../../components/TokenProvider';
 
 const SinglePlayerFrame = ({ tokenCount, setTokenCount, unlockedCourses = [], setUnlockedCourses }) => {
     const router = useRouter()
     const handleCourseClick = (courseId) => {
 
         // TODO: Implement Tokenization
-        router.push(`singleplayer/language/${courseId}`);
+        // router.push(`singleplayer/language/${courseId}`);
 
-        // if (unlockedCourses.includes(courseId)) {
-        //     // Navigate directly if the course is already unlocked
-        //     router.push(`singleplayer/language/${courseId}`);
-        // } else if (tokenCount > 0) {
-        //     // Deduct a token and unlock the course
-        //     setTokenCount(tokenCount - 1);
-        //     setUnlockedCourses([...unlockedCourses, courseId]);
-        //     router.push(`singleplayer/language/${courseId}`);
-        // } else {
-        //     alert('You do not have enough tokens to unlock this course.');
-        // }
+        if (unlockedCourses.includes(courseId)) {
+            // Navigate directly if the course is already unlocked
+            router.push(`singleplayer/language/${courseId}`);
+        } else if (tokenCount > 0) {
+            // Deduct a token and unlock the course
+            setTokenCount(tokenCount - 1);
+            setUnlockedCourses([...unlockedCourses, courseId]);
+            router.push(`singleplayer/language/${courseId}`);
+        } else {
+            alert('You do not have enough tokens to unlock this course.');
+        }
     };
 
     return (
@@ -37,7 +38,7 @@ const SinglePlayerFrame = ({ tokenCount, setTokenCount, unlockedCourses = [], se
                     {languagesData.language.map((lang) => (
                         <div
                             key={lang.id}
-                            className={`pl-4 bg-white shadow-md rounded-lg overflow-hidden flex ${unlockedCourses.includes(lang.id) ? '' : 'opacity-80'}`}
+                            className={`pl-4 bg-white shadow-md rounded-lg overflow-hidden flex ${unlockedCourses.includes(lang.id) ? '' : 'opacity-100'}`}
                         >
                             <div className='p-4 flex-1'>
                                 <h3 className='text-xl font-bold mb-2'>{lang.language}</h3>

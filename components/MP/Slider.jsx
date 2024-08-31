@@ -23,13 +23,13 @@ const slides = [
         url: '/confirm' // Update URL to point to the Confirm route
     },
     {
-        image: 'public/CHARACTERS_WITH_BG/SWIFT - 1.jpg',
+        image: '/CHARACTERS_WITH_BG/SWIFT - 1.jpg',
         title: 'CSAR',
         description: 'This is a fourth description',
         url: '/confirm' // Update URL to point to the Confirm route
     },
     {
-        image: 'CHARACTERS_WITH_BG/CSS - 1.jpg',
+        image: '/CHARACTERS_WITH_BG/CSS - 1.jpg',
         title: 'SWIFTEE',
         description: 'This is a fifth description',
         url: '/confirm' // Update URL to point to the Confirm route
@@ -47,6 +47,7 @@ const Slider = ({ onSelect }) => {
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: '0',
+
         responsive: [
             {
                 breakpoint: 1024,
@@ -72,7 +73,7 @@ const Slider = ({ onSelect }) => {
                     {slides.map((slide, index) => (
                         <div
                             key={index}
-                            className="text-center cursor-pointer m-0 p-0 group relative rounded-lg overflow-hidden shadow-sm mx-4"
+                            className="text-center cursor-pointer m-0 p-0 group relative rounded-lg overflow-hidden shadow-sm"
                             onClick={() => onSelect(slide)}
                             style={{
                                 width: '250px', // Increased width

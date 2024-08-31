@@ -1,3 +1,5 @@
+// NO USAGES
+
 import React, { useState } from 'react';
 
 // Define a type for the TokenManager's props

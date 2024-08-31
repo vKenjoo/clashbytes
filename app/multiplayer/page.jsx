@@ -28,8 +28,8 @@ const MultiPlayerFrame = () => {
 	};
 
 	return (
-		<div className='multiplayer-frame py-3 text-white flex flex-col items-center'>
-			<div className='container mx-auto text-center mt-6 max-w-4xl'>
+		<div className='multiplayer-frame py-3 text-white flex flex-col'>
+			<div className='container mx-auto text-center mt-6'>
 				<h1 className='text-7xl font-bold mb-4'>Choose Your Avatar</h1>
 				<Slider onSelect={handleSelect} />
 			</div>

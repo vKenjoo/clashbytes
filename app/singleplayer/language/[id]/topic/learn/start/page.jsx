@@ -96,7 +96,7 @@ const LearnFrame = () => {
   const currentTopic = topics[currentTopicIndex];
 
   return (
-    <div className='flex flex-col items-center justify-center text-white pt-10'>
+    <div className='flex flex-col items-center justify-center text-white pt-10 w-4/5'>
       <h1 className='text-4xl font-bold py-2 text-center'>Learn to Code</h1>
       <div className='text-center'>
         <h2>Watch this Video</h2>
@@ -113,7 +113,7 @@ const LearnFrame = () => {
       <button onClick={toggleTheme} className='mb-5 px-4 py-2 bg-blue-500 text-white rounded'>
         Toggle {theme === 'material' ? 'Light' : 'Dark'} Mode
       </button>
-      <div className='mb-10 bg-gray-800 rounded-2xl py-6 w-1/2'>
+      <div className='mb-10 bg-gray-800 rounded-2xl py-6 w-4/5'>
         <h2 className='text-yellow-500 text-2xl pb-5 font-bold text-center'>{currentTopic}</h2>
         <p className='text-center'>{getInstruction(currentTopic)}</p>
         <div className='text-left px-5'>

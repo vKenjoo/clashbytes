@@ -8,18 +8,18 @@ const Win = () => {
 
     return (
         <div
-            className="flex flex-col items-center justify-center min-h-screen overflow-hidden"
+            className="flex flex-grow items-center justify-center overflow-hidden"
             style={{
                 backgroundImage: `url('/MULTIPLAY/LAST_WINNER.svg')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
+                backgroundClip: 'border-box',
                 backgroundRepeat: 'no-repeat'
             }}
         >
             <button
                 onClick={() => router.push('/')}
-                className="bg-blue-500 text-white px-8 py-4 rounded-lg text-xl absolute bottom-8"
-                style={{ left: '50%', transform: 'translateX(-50%)' }}
+                className="bg-blue-500 text-white px-8 py-4 rounded-lg text-xl fixed bottom-24"
             >
                 Go to Home
             </button>
