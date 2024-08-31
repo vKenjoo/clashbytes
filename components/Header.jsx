@@ -2,8 +2,11 @@
 
 import React from 'react';
 import Link from 'next/link'; // Next.js Link import
+import { useTokenContext } from "@/components/TokenProvider";
 
-const Header = ({tokenCount = 9}) => {
+const Header = () => {
+    const { token } = useTokenContext();
+
     return (
         <header className="flex w-full bg-gray-800 text-white min-h-16 justify-center overflow-auto">
             <div className="h-auto m-auto w-9/12 flex justify-between items-center py-1 px-2">
@@ -19,7 +22,7 @@ const Header = ({tokenCount = 9}) => {
                     <div className="">
                         <span className="text-white text-base mr-2">Tokens:</span>
                         <span className="bg-yellow-500 text-gray-800 rounded-full px-3 py-1 text-sm font-semibold">
-                            {tokenCount}
+                            {token}
                         </span>
                     </div>
                 </div>
